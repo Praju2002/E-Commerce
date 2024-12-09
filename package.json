@@ -1,5 +1,21 @@
 {
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/mongoose": "^5.11.96",
+    "@types/node": "^22.10.1",
+    "esbuild": "^0.24.0",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  },
+  "scripts": {
+    "build": "esbuild src/app.ts --bundle --outfile=dist/app.js",
+    "dev": "nodemon --watch src --exec ts-node src/app.ts"
+  },
   "dependencies": {
-    "mongoose": "^8.8.2"
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "mongoose": "^8.8.4"
   }
 }
