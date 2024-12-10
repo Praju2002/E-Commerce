@@ -4,7 +4,8 @@ import cors from "cors";
 import orderRouter from "./routes/orderRoutes";
 import productRouter from "./routes/productRoutes";
 import userRouter from "./routes/userRoutes";
-
+import dotenv from "dotenv";
+dotenv.config();
 const app=express();
 app.use(express.json());
 
